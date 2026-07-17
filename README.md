@@ -8,7 +8,6 @@
 ![Gemini AI](https://img.shields.io/badge/Gemini-AI-purple)
 ![Vercel](https://img.shields.io/badge/Frontend-Vercel-black?logo=vercel)
 ![Render](https://img.shields.io/badge/Backend-Render-blue?logo=render)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
