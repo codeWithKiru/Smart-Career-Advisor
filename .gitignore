@@ -1,17 +1,34 @@
+# ==========================
 # Python
+# ==========================
 backend/venv/
 backend/__pycache__/
 backend/.env
 backend/uploads/
 backend/*.db
+*.pyc
 
-# React
+# ==========================
+# Node.js / React
+# ==========================
+node_modules/
 frontend/node_modules/
 frontend/dist/
+dist/
 
+# ==========================
+# Environment Variables
+# ==========================
+.env
+.env.local
+
+# ==========================
 # VS Code
+# ==========================
 .vscode/
 
-# OS files
+# ==========================
+# Operating System
+# ==========================
 .DS_Store
 Thumbs.db
