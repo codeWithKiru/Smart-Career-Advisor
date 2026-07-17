@@ -1,0 +1,148 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 90px 8%;
+  min-height: 92vh;
+
+  background: linear-gradient(
+      rgba(15, 23, 42, 0.92),
+      rgba(15, 23, 42, 0.92)
+    ),
+    radial-gradient(circle at top right, #2563eb 0%, transparent 40%),
+    radial-gradient(circle at bottom left, #7c3aed 0%, transparent 35%);
+
+  overflow: hidden;
+}
+
+.hero-left {
+  flex: 1;
+  animation: fadeInLeft 0.8s ease;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 8px 18px;
+  background: rgba(37, 99, 235, 0.2);
+  color: #60a5fa;
+  border: 1px solid #2563eb;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.hero-left h1 {
+  font-size: 60px;
+  line-height: 1.15;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.hero-left p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #cbd5e1;
+  max-width: 620px;
+  margin-bottom: 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 15px 32px;
+  border-radius: 12px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.primary-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+}
+
+.primary-btn:hover {
+  transform: translateY(-4px);
+  background: #1d4ed8;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.secondary-btn:hover {
+  background: white;
+  color: #0f172a;
+  transform: translateY(-4px);
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  animation: fadeInRight 1s ease;
+}
+
+.hero-right img {
+  width: 560px;
+  max-width: 100%;
+  filter: drop-shadow(0 15px 35px rgba(37, 99, 235, 0.4));
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 8%;
+  }
+
+  .hero-left h1 {
+    font-size: 42px;
+  }
+
+  .hero-left p {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-right img {
+    width: 380px;
+    margin-top: 40px;
+  }
+}

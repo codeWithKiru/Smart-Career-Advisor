@@ -1,0 +1,60 @@
+.analytics {
+  padding: 80px 8%;
+  background: #ffffff;
+}
+
+.analytics h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #1e293b;
+  margin-bottom: 50px;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 30px;
+}
+
+.chart-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+  transition: .3s;
+}
+
+.chart-card:hover {
+  transform: translateY(-8px);
+}
+
+.chart-card h3 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.recharts-wrapper {
+  margin: auto;
+}
+
+@media (max-width:768px) {
+
+  .analytics {
+    padding: 60px 20px;
+  }
+
+  .analytics h2 {
+    font-size: 34px;
+  }
+
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-card {
+    padding: 20px;
+  }
+
+}

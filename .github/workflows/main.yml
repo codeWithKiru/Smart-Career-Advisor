@@ -1,0 +1,44 @@
+name: Smart Career Advisor CI
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: ["3.13"]
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install Backend Dependencies
+        run: |
+          cd backend
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Verify Python Files
+        run: |
+          cd backend
+          python -m py_compile app.py
+          python -m py_compile gemini_service.py
+
+      - name: Backend Syntax Check
+        run: |
+          cd backend
+          python -m compileall .

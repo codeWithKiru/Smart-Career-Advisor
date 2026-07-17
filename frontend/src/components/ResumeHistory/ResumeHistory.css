@@ -1,0 +1,130 @@
+.history-section {
+  padding: 80px 8%;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.history-section h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #1e293b;
+  margin-bottom: 35px;
+}
+
+.history-search {
+  display: block;
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto 45px;
+  padding: 15px 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  transition: .3s;
+}
+
+.history-search:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37,99,235,.15);
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 30px;
+}
+
+.history-card {
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  transition: .3s;
+  border-left: 5px solid #2563eb;
+}
+
+.history-card:hover {
+  transform: translateY(-8px);
+}
+
+.history-card h3 {
+  color: #2563eb;
+  margin-bottom: 18px;
+  word-break: break-word;
+}
+
+.history-card p {
+  color: #475569;
+  margin: 12px 0;
+  line-height: 1.6;
+}
+
+.history-card strong {
+  color: #1e293b;
+}
+
+.history-date {
+  margin-top: 20px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.download-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.download-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.empty-history {
+  background: white;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.empty-history h3 {
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.empty-history p {
+  color: #64748b;
+  line-height: 1.8;
+}
+
+@media (max-width:768px) {
+
+  .history-section {
+    padding: 60px 20px;
+  }
+
+  .history-section h2 {
+    font-size: 32px;
+  }
+
+  .history-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .history-card {
+    padding: 24px;
+  }
+
+}

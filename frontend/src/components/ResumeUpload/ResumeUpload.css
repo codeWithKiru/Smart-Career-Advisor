@@ -1,0 +1,163 @@
+.resume-upload {
+  padding: 80px 8%;
+  background: #0f172a;
+  min-height: 100vh;
+}
+
+.resume-upload h2 {
+  text-align: center;
+  color: white;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.resume-upload p {
+  text-align: center;
+  color: #cbd5e1;
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+.upload-box {
+  background: white;
+  max-width: 700px;
+  margin: auto;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.2);
+}
+
+.upload-box input {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+}
+
+.file-name {
+  margin-top: 18px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.upload-box button {
+  width: 100%;
+  padding: 15px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.upload-box button:hover {
+  background: #1d4ed8;
+}
+
+.upload-box button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.loader-box {
+  margin: 40px auto;
+  max-width: 700px;
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.loader {
+  width: 70px;
+  height: 70px;
+  border: 8px solid #e2e8f0;
+  border-top: 8px solid #2563eb;
+  border-radius: 50%;
+  margin: auto;
+  animation: spin 1s linear infinite;
+}
+
+.loader-box h3 {
+  margin-top: 25px;
+  color: #2563eb;
+}
+
+.loader-box p {
+  color: #64748b;
+}
+
+.score-container {
+  display: flex;
+  gap: 25px;
+  margin-top: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.score-card {
+  width: 260px;
+  background: white;
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.score-card h3 {
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+.score-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.analysis-box {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.15);
+}
+
+.analysis-box h3 {
+  color: #2563eb;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.analysis-box ul,
+.analysis-box ol {
+  padding-left: 25px;
+}
+
+.analysis-box li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+.analysis-box p {
+  color: #334155;
+  line-height: 1.8;
+  text-align: left;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
