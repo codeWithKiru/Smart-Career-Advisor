@@ -1,169 +1,136 @@
 # 🚀 Smart Career Advisor
 
-An AI-powered career guidance platform that helps students and job seekers analyze resumes, improve ATS scores, practice interviews, and receive AI-powered career guidance.
+### AI-powered Career Guidance Platform built with React, Flask & Gemini AI
 
-## 🌐 Live Demo
-
-**Frontend:** https://smart-career-advisor-gamma.vercel.app
-
-**Backend API:** https://smart-career-advisor-0wzj.onrender.com
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![Flask](https://img.shields.io/badge/Flask-Python-black?logo=flask)
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Gemini AI](https://img.shields.io/badge/Gemini-AI-purple)
+![Vercel](https://img.shields.io/badge/Frontend-Vercel-black?logo=vercel)
+![Render](https://img.shields.io/badge/Backend-Render-blue?logo=render)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
-# ✨ Features
+## 📖 About
+
+Smart Career Advisor is an AI-powered web application that helps students and job seekers improve their resumes, analyze ATS compatibility, practice AI-powered mock interviews, chat with an AI career assistant, and track their progress through an analytics dashboard.
+
+---
+
+## ✨ Features
 
 - 📄 AI Resume Analyzer
-- 🤖 AI Career Chatbot
-- 🎯 ATS Score Analysis
-- 💼 AI Mock Interview
-- 📚 Resume History
-- 📊 Analytics Dashboard
-- 📑 PDF Report Generation
-- 📱 Responsive Design
+- 🤖 Gemini AI Career Chat
+- 🎤 AI Mock Interview
+- 📊 ATS Score Analysis
+- 📈 Analytics Dashboard
+- 📝 Resume History
+- 📥 PDF Report Generation
+- 📱 Responsive UI
 - ☁️ Cloud Deployment (Vercel + Render)
 
 ---
 
-# 🛠 Tech Stack
+## 🛠️ Tech Stack
 
-### Frontend
-
-- React.js
-- React Router
-- Axios
-- CSS3
-- React Markdown
-- React Hot Toast
-
-### Backend
-
-- Flask
-- Python
-- SQLite
-- PDFPlumber
-- ReportLab
-
-### AI
-
-- Google Gemini API
-
-### Deployment
-
-- Vercel
-- Render
-- GitHub Actions
+| Frontend | Backend | AI | Database | Deployment |
+|----------|----------|----|----------|------------|
+| React | Flask | Gemini AI | SQLite | Vercel |
+| HTML | Python | Google AI Studio | SQL | Render |
+| CSS | REST API | Prompt Engineering | | GitHub |
 
 ---
 
-# 📸 Screenshots
+## 🏗️ Architecture
 
-## Home Page
+```text
+User
+   │
+   ▼
+React Frontend (Vercel)
+   │
+REST API
+   │
+Flask Backend (Render)
+   │
+ ├── Gemini AI
+ └── SQLite Database
+```
 
+---
+
+## 📸 Screenshots
+
+### 🏠 Home
 ![Home](frontend/src/assets/screenshots/home-page.png)
 
----
-
-## Resume Analyzer
-
+### 📄 Resume Analyzer
 ![Resume](frontend/src/assets/screenshots/resume-analyzer.png)
 
----
-
-## AI Chat
-
+### 🤖 AI Chat
 ![Chat](frontend/src/assets/screenshots/ai-chat.png)
 
----
-
-## AI Mock Interview
-
+### 🎤 Mock Interview
 ![Interview](frontend/src/assets/screenshots/mock-interview.png)
 
----
-
-## Resume History
-
+### 📜 Resume History
 ![History](frontend/src/assets/screenshots/resume-history.png)
 
----
-
-## Analytics Dashboard
-
+### 📊 Analytics Dashboard
 ![Analytics](frontend/src/assets/screenshots/analytics-dashboard.png)
 
 ---
 
-# 📂 Project Structure
-
-```
-Smart-Career-Advisor
-│
-├── backend
-│   ├── app.py
-│   ├── services
-│   ├── routes
-│   ├── uploads
-│   └── database
-│
-├── frontend
-│   ├── src
-│   │   ├── components
-│   │   ├── pages
-│   │   ├── assets
-│   │   └── hooks
-│   └── public
-│
-└── README.md
-```
-
----
-
-# ⚙ Installation
-
-## Clone Repository
+## 🚀 Installation
 
 ```bash
 git clone https://github.com/codeWithKiru/Smart-Career-Advisor.git
-```
 
-## Frontend
+cd Smart-Career-Advisor
 
-```bash
+# Frontend
 cd frontend
 npm install
 npm run dev
-```
 
-## Backend
-
-```bash
-cd backend
+# Backend
+cd ../backend
 pip install -r requirements.txt
 python app.py
 ```
 
 ---
 
-# 🚀 Future Improvements
+## 🔗 Live Demo
 
-- User Authentication
-- Resume Templates
-- Voice Interview Practice
-- Multi-language Support
-- Job Recommendation API
-- Interview Performance Analytics
+**Frontend:** https://smart-career-advisor-gamma.vercel.app
+
+**Backend:** https://smart-career-advisor-0wzj.onrender.com
 
 ---
 
-# 👩‍💻 Author
+## 🚀 Future Scope
+
+- 🔐 User Authentication
+- 📄 AI Resume Builder
+- 🎙️ Voice-based Mock Interview
+- 💌 AI Cover Letter Generator
+- 🧠 Personalized Learning Roadmaps
+- 💼 Real-time Job Recommendations
+- 🌍 Multi-language Support
+- ☁️ Cloud Resume Storage
+- 📱 Mobile Application
+
+---
+
+## 👩‍💻 Author
 
 **Kiruthika M E**
 
-GitHub:
-https://github.com/codeWithKiru
+GitHub: https://github.com/codeWithKiru
 
-LinkedIn:
-https://www.linkedin.com/in/kiruthika-m-e-83a521276
+LinkedIn: https://www.linkedin.com/in/kiruthika-m-e-83a521276
 
 ---
 
